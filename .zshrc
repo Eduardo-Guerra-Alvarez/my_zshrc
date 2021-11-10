@@ -75,7 +75,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,6 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias siipersu="cd ~/Documents/SS/siipersu"
+alias cls="clear"
 alias vim='nvim'
 export EDITOR='nvim'
 
@@ -114,4 +116,4 @@ export EDITOR='nvim'
 export PATH="/Applications/MAMP/bin/php/php7.4.9/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS='bat --style=numbers --color=always --line-range :500 {} -height 50% --border --preview="cat {}" --preview-window=right:60%:wrap'
+export FZF_DEFAULT_OPTS='--height 50% --border --preview="cat {}" --preview-window=right:60%:wrap'
