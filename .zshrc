@@ -107,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
 alias siipersu="cd ~/Documents/SS/siipersu"
 alias cls="clear"
 alias vim='nvim'
+alias search="web_search duckduckgo"
 export EDITOR='nvim'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
