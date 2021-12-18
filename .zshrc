@@ -78,6 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zsh_pluggins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # User configuration
 
@@ -109,6 +110,10 @@ alias cls="clear"
 alias vim='nvim'
 alias search="web_search duckduckgo"
 export EDITOR='nvim'
+
+alias ll="exa -l -g --icons"
+alias lla="ll -a"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
