@@ -105,6 +105,7 @@ source ~/.zsh_pluggins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ex="exit"
 alias siipersu="cd ~/Documents/SS/siipersu"
 alias cls="clear"
 alias vim='nvim'
@@ -122,4 +123,9 @@ alias lla="ll -a"
 export PATH="/Applications/MAMP/bin/php/php7.4.9/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS='--height 50% --border --preview="cat {}" --preview-window=right:60%:wrap'
+# Options to FZF
+export FZF_DEFAULT_OPTS='--height 50% --border --preview="bat --style=numbers --color=always --line-range :500 {}" --preview-window=right:60%:wrap'
+# Hidde node_modules
+export FZF_DEFAULT_COMMAND='find . \( -name node_modules \) -prune -o -print'
+# add the previous command to CTRL-T
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
